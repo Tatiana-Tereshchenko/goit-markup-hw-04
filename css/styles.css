@@ -118,13 +118,11 @@ ul {
 }
 /* HERO */
 .hero {
-background-color: var(--background-color-hero);
 text-align: center;
 padding-top: 192px;
 padding-bottom: 192px;
 background-image: linear-gradient( to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/homework4/people-office.jpg");
 max-width: 1440px;
-min-height: 603px;
 margin-left: auto;
 margin-right: auto;
 background-repeat: no-repeat;
@@ -172,15 +170,17 @@ padding-bottom: 16px;
 padding-right: 32px;
 padding-left: 32px;
 border: solid #4D5AE5;
+box-shadow: 0px 1px  1px  0px  rgba(46, 47, 66, 0.16);
 
 }
 .hero-button:hover {
     background-color: var(--accent-color);
-    box-shadow: 0px 4px  0px  4px  rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 4px  4px  0px  rgba(0, 0, 0, 0.15);
+    
 }
 .hero-button:focus {
     background-color: #404BBF;
-    border: #404BBF;
+    border: solid #404BBF ;
     box-shadow: 0px 4px  0px  4px  rgba(0, 0, 0, 0.15);
 }
 
@@ -200,6 +200,7 @@ font-weight: 700;
 font-size: 20px;
 line-height: 1.2;
 letter-spacing: 0.02em;
+margin-top: 8px;
 }
 .section-text {
 line-height: 1.5;
@@ -245,13 +246,16 @@ list-style: none;
     width: 264px;
     height: 112px;
     background-color:#F4F4FD;
+    justify-content: center;
+    align-items: center;
 }
 .social-icons {
     display: flex;
     align-items: center;
-    padding-left: 16px;
-    padding-right: 16px;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 12px;
+    
 }
 
 
@@ -259,7 +263,7 @@ list-style: none;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 12px;
+    
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -270,11 +274,9 @@ list-style: none;
     align-items: center;
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 24px;
-    margin-top: 24px;
+    
    
-}
-.team-item {
+}.team-item {
 box-shadow: 0px 1px 0px 1px rgba(46, 47, 66, 0.16);
 border-radius: 0px 0px 4px 4px;
 }
@@ -282,7 +284,7 @@ border-radius: 0px 0px 4px 4px;
     display: block;
     width: 168px;
     height: 88px;
-    border: solid 1px #000000;
+    border: solid 1px #8E8F99;
     border-radius: 4px;
     margin-left: auto;
     margin-right: auto;
@@ -292,19 +294,22 @@ border-radius: 0px 0px 4px 4px;
 .customers-icon {
     fill: #8E8F99;
 }
+
+
+
 .customers:hover {
     border: solid 1px #4D5AE5;
 }
 .customers:focus {
     border: solid 1px #4D5AE5;
 }
-.customers-icon:hover {
+.customers:hover .customers-icon{
     color: #4D5AE5;
-    fill: currentColor;
+    fill: #4D5AE5;
 }
-.customers-icon:focus {
+.customers:focus .customers-icon{
     color: #4D5AE5;
-    fill: currentColor;
+    fill: #4D5AE5;
 }
 .customers-list {
     display: flex;
@@ -361,6 +366,7 @@ margin-top: 16px;
 .futer-list-icon {
     display: flex;
     align-items: baseline;
+    gap: 16px;
 }
 
 .futer-list {
@@ -381,10 +387,11 @@ margin-top: 16px;
 .footer {
     display: flex;
 }
+
 /*  PAGE2------------portfolio */
 .filter-portfolio {
     color: var(--accent-color);
-    background-color: #E7E9FC;
+    background-color: #F4F4FD;
     font-family: Roboto, sans-serif;
     font-size: 16px;
     line-height: 1.5;
@@ -393,7 +400,7 @@ margin-top: 16px;
     letter-spacing: 0.02em;
     font-weight: 700;
     max-width: 126px;
-    border: 1px #E7E9FC;
+    border: solid 1px #E7E9FC;
     border-radius: 4px;
     padding-top: 12px;
     padding-bottom: 12px;
@@ -402,12 +409,14 @@ margin-top: 16px;
 }
 .filter-portfolio:hover {
     background-color: var(--accent-color);
+    border-color: transparent;
     color: var(--button-color);
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12);;
 }
 .filter-portfolio:focus {
     background-color: var(--accent-color);
     color: var(--button-color);
+    border-color: transparent;
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
     
 }
@@ -430,12 +439,13 @@ margin-top: 16px;
 .portfolio-section {
     text-decoration: none;
     display: block;
+    box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 .portfolio-section:hover {
-    box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .portfolio-section:focus {
-    box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .conteiner {
     width: 1158px;
